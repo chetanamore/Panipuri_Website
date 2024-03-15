@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables  */
+:root{
+    --navbar-height : 59px;
+}
+ /* Navigation Bar  */
+ #navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+ }
+ 
+
+ /* Navigation Bar: logo and image  */
+ #logo{
+
+    margin: 3px 5px;
+
+ }
+
+ #logo img{
+
+    height: 59px;
+    margin: 2px 3px;
+
+ }
+
+/* Navigation Bar: list Styling  */
+
+#navbar ul{
+
+    display: flex;
+}
+
+#navbar::before{
+
+    content:  "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+
+}
+
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: rgb(194, 193, 193);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(173, 170, 170);
+    
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+
+    content:  "";
+    position: absolute;
+    background: url('./images/logo/Golgappa_Pani_Puri_India.jpg');
+    height: 630px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: rgb(33, 28, 28);
+    text-align: center;
+    text-decoration: solid;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* section services  */
+#services{
+    margin: 10px;
+    display: flex;
+    /* flex-direction: column; */
+}
+#services .box{
+    /* border: 2px solid black; */
+    padding: 34px;
+    margin: 10px 7px;
+    border-radius: 2px;
+    background: rgb(209, 225, 209);
+    transition: all ease-in 1s;
+}
+#services .box p{
+    text-align: center;
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+#services .box:hover{
+    margin-top: -.5rem;
+ cursor: pointer;
+ box-shadow: 10px 10px 15px rgb(130, 130, 130);
+ background-color: rgb(220, 230, 230);
+ border-radius: 0.2cm;
+}
+/* Clients section  */
+/* #clients-section{
+    height: 50px;
+
+} */
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url('./images/bgimg/bg2.jpeg');
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item{
+    padding: 50px;
+}
+#clients img{
+    height: 150px;
+    padding: 50px;
+}
+/* Contact section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background: url('./images/bgimg/bg3.jpeg');
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* utility classes  */
+.h-primary{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.8rem;
+    padding: 20px;
+    text-align: center;
+    
+}
+.h-secondary{
+    font-size: 2rem;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+}
